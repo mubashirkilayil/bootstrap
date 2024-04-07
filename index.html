@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubashir K</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="data:image/png;base64,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">
+    <!-- <style>
+    .object-fit-cover {
+    width: 400px;
+    height: 400px;
+    object-fit:cover
+    }
+    </style> -->
+</head>
+<body>
+    <header class="bg-success " style="position: fixed; width: 100%; z-index: 1;">
+        <div class="row text-white">
+            <div class="col-md-6 col-9 p-3 ps-5">
+                <h2><span style="font-weight: 700;">M</span>ubashir K</h2>
+            </div>
+            <div class="col-md-6 col-3 my-auto">
+                <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#home-section">Home <span class="sr-only"></span></a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link text-white" href="#service-section">Services <span class="sr-only"></span></a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link text-white" href="#experiance-section">Experiance <span class="sr-only"></span></a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link text-white" href="#contact-section">Contact me <span class="sr-only"></span></a>
+                            </li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+    <section  id="home-section" style="padding-top: 5em;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img class=" rounded-circle  img-fluid" src="images/Image.jpeg" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h1 style="margin-left: 1em;margin-top: 1em;">Software Engineer at Acsia Technologies <br> Infopark,Ernamkulam,Kakkanad</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light p-5"  id="service-section">
+        <div class="container">
+            <h1 class="text-center">Skills</h1>
+            <div class="row">
+                <div class="col-md-4 pt-4">
+                    <div class="card" style=" border-radius: 5%; border-color: white;">
+                        <img class="card-img-top" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" alt="Card image cap">
+                        <!-- <i class="bi bi-filetype-html fs-1"></i> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-filetype-html ps-4" viewBox="0 0 16 16"> -->
+                          <!-- <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                        </svg> -->
+                        <div class="card-body">
+                          <h5 class="card-title">Web design</h5>
+                          <p class="card-text"> The different areas of web design include web graphic design; user interface design;</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <div class="card " style=" border-radius: 5%;border-color: white;">
+                        <img class="card-img-top" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Web development</h5>
+                          <p class="card-text"> The different areas of web design include web graphic design; user interface design;</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <div class="card" style=" border-radius: 5%;border-color: white;">
+                        <img class="card-img-top" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Android Apps</h5>
+                          <p class="card-text"> The different areas of web design include web graphic design; user interface design;</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-4 pt-4">
+                    <div class="card" style=" border-radius: 5%;border-color: white;">
+                        <img class="card-img-top" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Web design</h5>
+                          <p class="card-text"> The different areas of web design include web graphic design; user interface design;</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <div class="card" style=" border-radius: 5%;border-color: white;">
+                        <img class="card-img-top" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Web design</h5>
+                          <p class="card-text"> The different areas of web design include web graphic design; user interface design;</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <div class="card" style=" border-radius: 5%;border-color: white;">
+                        <img class="card-img-top" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Web design</h5>
+                          <p class="card-text"> The different areas of web design include web graphic design; user interface design;</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5 bg-success" id="experiance-section">
+      <div class="container">
+        <h1 class="text-center">Experience</h1>
+        <div class="row pt-4">
+          <div class="col-md-4 pt-4">
+            <div class="card" style=" border-radius: 5%; border-color: white;">
+                <img class="card-img-top" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Web design</h5>
+                  <p class="card-text"> The different areas of web design include web graphic design; user interface design;</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 pt-4">
+          <div class="card" style=" border-radius: 5%; border-color: white;">
+              <img class="card-img-top" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Web design</h5>
+                <p class="card-text"> The different areas of web design include web graphic design; user interface design;</p>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4 pt-4">
+        <div class="card" style=" border-radius: 5%; border-color: white;">
+            <img class="card-img-top" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Web design</h5>
+              <p class="card-text"> The different areas of web design include web graphic design; user interface design;</p>
+            </div>
+          </div>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section">
+      <div class="container p-3">
+        <h1 class="text-center">Contact</h1>
+        <div class="row">
+          <form">
+          <div class="row">
+            <div class="form-group col-md-6"  >
+              <label for="nameFormControlInput1" style="font-weight: 500;">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlName4" placeholder="Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="nameFormControlInput1" style="font-weight: 500;">Phone</label>
+              <input type="tel" class="form-control" id="exampleFormControlName4" placeholder="Phone">
+            </div>
+          </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1" style="font-weight: 500;">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1" style="font-weight: 500;">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message ..."></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <button   style="width: 100%;" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-success">
+      <div class="container ">
+        <div class="row">
+          <div class="row text-white text-center mx-auto">
+          <div style="margin-top: 0.5em;">
+          <a style="text-decoration: none; color: white; margin-right: 0.5em;" href="https://www.facebook.com/checkpoint/?next=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2F"><i class="bi bi-facebook"></i></a>
+          <a style="text-decoration: none; color: white; margin-right: 0.5em" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+          <a style="text-decoration: none; color: white;" href="https://www.threads.net/?hl=en"><i class="bi bi-threads"></i></a>
+          </div>
+          <p>©Copyright</p>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
